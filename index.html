@@ -50,11 +50,13 @@
 			<section>
 				<h2>Its all about the ubiquitous language</h2>
 				<p>
-					<img width="30%" src="img/person2.png" style="border: none; background: transparent" />
-					<img width="30%" src="img/person1.png" style="border: none; background: transparent" />
+					<img width="30%" src="img/person2.png" style="border: none; box-shadow: none; background: transparent" />
+					<img width="30%" src="img/person1.png" style="border: none; box-shadow: none; background: transparent" />
 				</p>
 				<p>
-					with an agreed upon glossary describing	<i>nouns</i> and <i>verbs</i>
+					with an agreed upon glossary describing
+					<i>nouns</i> and
+					<i>verbs</i>
 				</p>
 			</section>
 
@@ -62,10 +64,12 @@
 				<h2>The ubiquitous language describes</h2>
 				<ul>
 					<li>
-						The <i>problem domain</i> (what your application is about)
+						The
+						<i>problem domain</i> (what your application is about)
 					</li>
 					<li>
-						Relevant parts of the <i>business domain</i> (what your organization is doing)
+						Relevant parts of the
+						<i>business domain</i> (what your organization is doing)
 					</li>
 				</ul>
 			</section>
@@ -78,14 +82,16 @@
 			<section>
 				<h2>Entites</h2>
 				<p>
-					Have unique identity, evolve over time, and <i>represent</i> things in the domain.
+					Have unique identity, evolve over time, and
+					<i>represent</i> things in the domain.
 				</p>
 			</section>
 
 			<section>
 				<h2>Value Objects</h2>
 				<p>
-					Are immutable and <i>measure or define</i> things in the domain.
+					Are immutable and
+					<i>measure or define</i> things in the domain.
 				</p>
 			</section>
 
@@ -95,7 +101,8 @@
 					Are sets of at least 1 entity that strongly belong together.
 				</p>
 				<p>
-					By default, we should strive for any entity to be its own aggregate. Only if we need transactional consistency (as opposed to eventual consistency) across multiple entities, we need to compose entities into aggregates.
+					By default, we should strive for any entity to be its own aggregate. Only if we need transactional consistency (as opposed
+					to eventual consistency) across multiple entities, we need to compose entities into aggregates.
 				</p>
 			</section>
 
@@ -109,22 +116,22 @@
 			<section>
 				<h2>Domains</h2>
 				<p>
-					are a <i>problem space</i> concept.
+					are a
+					<i>problem space</i> concept.
 				</p>
 			</section>
 
 			<section>
 				<h2>Bounded contexts</h2>
 				<p>
-					are a <i>solution space</i> concept. They describe how an application chooses to implement the problem domain.
+					are a
+					<i>solution space</i> concept. They describe how an application chooses to implement the problem domain.
 				</p>
 			</section>
 
 			<section>
 				<h2>Bounded context architecture</h2>
-				<p>
-					<img width="100%" src="img/boundedcontext.png" style="border: none; background: transparent" />
-				</p>
+				<img class="stretch" src="img/boundedcontext.png" style="border: none; box-shadow: none; background: transparent" />
 			</section>
 
 			<section>
@@ -140,7 +147,7 @@
 							</li>
 						</ul>
 					</p>
-					<img width="30%" src="img/boundedcontext.png" style="float: right; border: none; background: transparent" />
+					<img width="30%" src="img/boundedcontext.png" style="float: right; border: none; box-shadow: none; background: transparent" />
 				</p>
 			</section>
 
@@ -162,7 +169,8 @@
 						</ul>
 					</li>
 					<li>
-						Domain Events - are published by aggregates or domain services when things <i>happened</i> → are immutable
+						Domain Events - are published by aggregates or domain services when things
+						<i>happened</i> → are immutable
 						<ul>
 							<li>
 								used for communication with other aggregates, domain services, application services and the outside world
@@ -171,10 +179,10 @@
 								usefull when eventual consistency is good enough
 							</li>
 						</ul>
-					</li>				
+					</li>
 				</ul>
 			</section>
-	
+
 			<section>
 				<h2>Bounded context</h2>
 				<li>
@@ -196,10 +204,14 @@
 						<a href="https://www.infoq.com/minibooks/domain-driven-design-quickly">Domain Driven Design Quickly</a>
 					</li>
 					<li>
-							<a href="https://www.amazon.de/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&qid=1524127946&sr=8-1&keywords=domain+driven+design">Domain-Driven Design: Tackling Complexity in the Heart of Software - <i>"the blue book"</i></a>
+						<a href="https://www.amazon.de/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&qid=1524127946&sr=8-1&keywords=domain+driven+design">Domain-Driven Design: Tackling Complexity in the Heart of Software -
+							<i>"the blue book"</i>
+						</a>
 					</li>
 					<li>
-							<a href="https://www.amazon.de/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/ref=sr_1_4?ie=UTF8&qid=1524127946&sr=8-4&keywords=domain+driven+design">Implementing Domain-Driven Design - <i>"the red book"</i></a>
+						<a href="https://www.amazon.de/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/ref=sr_1_4?ie=UTF8&qid=1524127946&sr=8-4&keywords=domain+driven+design">Implementing Domain-Driven Design -
+							<i>"the red book"</i>
+						</a>
 					</li>
 				</ul>
 			</section>
